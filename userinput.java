@@ -12,6 +12,7 @@ public class userinput {
         // int sum=a+b;
         System.out.println("Enter String");
         // String str=sc.nextLine();s
+        //ghgjghgj
         String str=sc.next();
         System.out.println(str);
     }
