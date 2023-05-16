@@ -10,10 +10,11 @@ public class userinput {
         // System.out.println("Second number");
         // int b=sc.nextInt();
         // int sum=a+b;
-        System.out.println("Enter String");
+        System.out.println("Enter String\"hello\"");
         // String str=sc.nextLine();s
         //ghgjghgj
         String str=sc.next();
         System.out.println(str);
+        
     }
 }
