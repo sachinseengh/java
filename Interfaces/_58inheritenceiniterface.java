@@ -5,7 +5,7 @@ interface sampleinterface{
 }
 interface childsampleinterface extends sampleinterface{
     void meth3();
-    void meth4();
+    void meth4(); 
 }
 class Meths implements childsampleinterface{
     public void meth1(){
