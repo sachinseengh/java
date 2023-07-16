@@ -1,6 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+//this is java code
+import java.util.Scanner;
 
 public class Adding implements ActionListener {
     JTextField tf1, tf2, tf3;
