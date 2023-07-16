@@ -44,5 +44,6 @@ public class Adding implements ActionListener {
 
     public static void main(String[] args) {
         Adding a = new Adding();
+        System.out.println("Hello");
     }
 }
