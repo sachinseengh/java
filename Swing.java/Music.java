@@ -32,33 +32,39 @@ public class Music implements ActionListener {
         select.addActionListener(this);
         jf.add(select);
 
-        Nowplaying = new JLabel("Music Playing", null, 0);
+        Nowplaying = new JLabel("Music Playing", 0);
         Nowplaying.setBounds(150, 130, 150, 30);
+
         jf.add(Nowplaying);
 
         Music_name = new JLabel();
         Music_name.setBounds(150, 170, 150, 30);
         jf.add(Music_name);
 
-        previous = new JButton("Previous", null);
+        ImageIcon previousimg = new ImageIcon("previous.png", "previous");
+        previous = new JButton("Previous", previousimg);
         previous.setBounds(10, 240, 100, 50);
         jf.add(previous);
 
-        play = new JButton("Play", null);
+        ImageIcon playimg = new ImageIcon("play.png", "play");
+
+        play = new JButton("Play", playimg);
         play.setBounds(120, 240, 100, 50);
         play.addActionListener(this);
         jf.add(play);
-        play.setBackground(Color.green);
 
-        pause = new JButton("Pause", null);
+        ImageIcon pauseimg = new ImageIcon("pause.png", "pause");
+
+        pause = new JButton("Pause", pauseimg);
         pause.setBounds(230, 240, 100, 50);
         pause.addActionListener(this);
         jf.add(pause);
-        pause.setBackground(Color.RED);
 
-        next = new JButton("Next", null);
+        ImageIcon nextimg = new ImageIcon("next.png", "next");
+        next = new JButton("Next", nextimg);
         next.setBounds(340, 240, 100, 50);
         jf.add(next);
+        next.setLayout(null);
     }
 
     public void actionPerformed(ActionEvent e) {
@@ -88,7 +94,9 @@ public class Music implements ActionListener {
             }
         } else if (e.getSource() == pause) {
             if (clip != null && clip.isRunning()) {
+                Nowplaying.setText("Paused");
                 clip.stop();
+
             }
         }
     }
